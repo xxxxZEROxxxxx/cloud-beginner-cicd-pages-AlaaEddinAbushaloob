@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="مشروع CI/CD باستخدام GitHub Actions و GitHub Pages - علاء الدين">
+    <title>CI/CD Pipeline | Alaa Eddin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Fira+Code:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body dir="ltr">
+    <!-- Animated background particles -->
+    <div class="bg-particles" id="particles"></div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-glow"></div>
+        <div class="container">
+            <div class="hero-badge">☁️ Cloud Computing Assignment</div>
+            <h1 class="hero-title">
+                <span class="gradient-text">CI/CD Pipeline</span>
+                <br>
+                <span class="subtitle-text">GitHub Actions + GitHub Pages</span>
+            </h1>
+            <div class="hero-info">
+                <div class="info-card">
+                    <span class="info-icon">👤</span>
+                    <div>
+                        <p class="info-label">Student</p>
+                        <p class="info-value">Alaa Eddin Jamal Abu Sahloob</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <span class="info-icon">📚</span>
+                    <div>
+                        <p class="info-label">Course</p>
+                        <p class="info-value">Cloud Computing</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <span class="info-icon">👩‍🏫</span>
+                    <div>
+                        <p class="info-label">Instructor</p>
+                        <p class="info-value">Dr. Faten Abushmmala</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- What is CI/CD Section -->
+    <section class="section" id="cicd">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2>What is CI/CD?</h2>
+            </div>
+            <div class="content-card glass-card">
+                <div class="cicd-grid">
+                    <div class="cicd-item">
+                        <div class="cicd-icon ci-icon">CI</div>
+                        <h3>Continuous Integration</h3>
+                        <p>
+                            Continuous Integration (CI) is a development practice where developers frequently merge
+                            their code changes
+                            into a shared repository. Each merge triggers an automated build and testing process that
+                            validates the
+                            changes. This helps catch bugs early and ensures that new code integrates smoothly with the
+                            existing
+                            codebase, reducing integration problems and improving software quality.
+                        </p>
+                    </div>
+                    <div class="cicd-divider">
+                        <div class="divider-line"></div>
+                        <span class="divider-icon">⚡</span>
+                        <div class="divider-line"></div>
+                    </div>
+                    <div class="cicd-item">
+                        <div class="cicd-icon cd-icon">CD</div>
+                        <h3>Continuous Deployment</h3>
+                        <p>
+                            Continuous Deployment (CD) extends CI by automatically deploying every validated change to
+                            production
+                            without manual intervention. Once code passes all automated tests and checks, it is released
+                            to users
+                            immediately. This approach enables faster delivery of features and fixes, reduces manual
+                            errors in
+                            deployment, and creates a reliable, repeatable release process for teams of any size.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Pipeline Section -->
+    <section class="section" id="pipeline">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2>My Pipeline</h2>
+            </div>
+            <div class="content-card glass-card">
+                <p class="pipeline-intro">
+                    Here's what happens automatically every time I push code to the <code>main</code> branch:
+                </p>
+                <div class="pipeline-flow">
+                    <div class="pipeline-step" data-step="1">
+                        <div class="step-icon">📝</div>
+                        <div class="step-content">
+                            <h4>Git Push</h4>
+                            <p>I push my code changes to the <code>main</code> branch on GitHub.</p>
+                        </div>
+                    </div>
+                    <div class="pipeline-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 5v14M19 12l-7 7-7-7" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="pipeline-step" data-step="2">
+                        <div class="step-icon">⚙️</div>
+                        <div class="step-content">
+                            <h4>GitHub Actions Triggered</h4>
+                            <p>The workflow automatically starts, checking out the code and verifying required files
+                                exist.</p>
+                        </div>
+                    </div>
+                    <div class="pipeline-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 5v14M19 12l-7 7-7-7" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="pipeline-step" data-step="3">
+                        <div class="step-icon">✅</div>
+                        <div class="step-content">
+                            <h4>Build & Validate</h4>
+                            <p>The pipeline checks that <code>index.html</code>, <code>style.css</code>, and
+                                <code>script.js</code> all exist.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pipeline-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 5v14M19 12l-7 7-7-7" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="pipeline-step" data-step="4">
+                        <div class="step-icon">🚀</div>
+                        <div class="step-content">
+                            <h4>Deploy to GitHub Pages</h4>
+                            <p>Once checks pass, the site is automatically deployed and goes live on GitHub Pages!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo Section -->
+    <section class="section" id="demo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2>Interactive Demo</h2>
+            </div>
+            <div class="demo-grid">
+                <!-- Pipeline Simulator -->
+                <div class="content-card glass-card demo-card">
+                    <h3>🔄 Pipeline Simulator</h3>
+                    <p>Click the button to simulate a CI/CD pipeline run!</p>
+                    <button class="btn btn-primary" id="runPipelineBtn" onclick="runPipeline()">
+                        <span class="btn-icon">▶</span> Run Pipeline
+                    </button>
+                    <div class="pipeline-status" id="pipelineStatus">
+                        <div class="status-step" id="step-checkout">
+                            <span class="status-dot"></span>
+                            <span>Checkout Code</span>
+                        </div>
+                        <div class="status-step" id="step-validate">
+                            <span class="status-dot"></span>
+                            <span>Validate Files</span>
+                        </div>
+                        <div class="status-step" id="step-build">
+                            <span class="status-dot"></span>
+                            <span>Build Artifact</span>
+                        </div>
+                        <div class="status-step" id="step-deploy">
+                            <span class="status-dot"></span>
+                            <span>Deploy to Pages</span>
+                        </div>
+                    </div>
+                    <div class="deploy-result" id="deployResult"></div>
+                </div>
+
+                <!-- Theme Toggle -->
+                <div class="content-card glass-card demo-card">
+                    <h3>🎨 Theme Switcher</h3>
+                    <p>Toggle between dark and light mode!</p>
+                    <button class="btn btn-secondary" id="themeToggleBtn" onclick="toggleTheme()">
+                        <span class="btn-icon">🌙</span> <span id="themeLabel">Switch to Light</span>
+                    </button>
+                    <div class="theme-preview" id="themePreview">
+                        <div class="preview-bar"></div>
+                        <div class="preview-bar short"></div>
+                        <div class="preview-dot"></div>
+                    </div>
+                </div>
+
+                <!-- Counter -->
+                <div class="content-card glass-card demo-card">
+                    <h3>🔢 Deploy Counter</h3>
+                    <p>Track how many times you've "deployed"!</p>
+                    <div class="counter-display" id="counterDisplay">0</div>
+                    <div class="counter-controls">
+                        <button class="btn btn-accent" onclick="updateCounter(1)">+ Deploy</button>
+                        <button class="btn btn-outline" onclick="updateCounter(-1)">- Rollback</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Built with ❤️ by <strong>Alaa Eddin Jamal Abu Sahloob</strong> </p>
+            <p class="footer-sub">Powered by GitHub Actions & GitHub Pages</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
