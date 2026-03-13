@@ -10,7 +10,7 @@ A static website demonstrating **Continuous Integration / Continuous Deployment 
 
 ## 🌐 Live Website
 
-👉 **[View the live site](https://xxxxZEROxxxxx.github.io/cloud-beginner-cicd-pages-AlaaEddin/)**
+👉 **[View the live site](https://xxxxzeroxxxxx.github.io/cloud-beginner-cicd-pages-AlaaEddinAbushaloob/)**
 
 
 ---
